@@ -1,0 +1,33 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "starwell-press-dev",
+	"main": "./src/worker.ts",
+	"compatibility_date": "2026-02-24",
+	"compatibility_flags": ["nodejs_compat"],
+	"account_id": "0ff4d6691280dd626d9acaa47be46473",
+	"workers_dev": false,
+	"preview_urls": false,
+	"vars": {
+		"SITE_ENV": "development",
+		"ROBOTS": "noindex",
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "starwell-press-dev-db",
+			"database_id": "ca3ede35-04a5-4309-ae79-556cb2f85986",
+		},
+	],
+	"r2_buckets": [
+		{
+			"binding": "MEDIA",
+			"bucket_name": "starwell-press-dev-media",
+		},
+	],
+	"kv_namespaces": [
+		{
+			"binding": "SESSION",
+			"id": "7c572e08359c4f58a8f5e66ae0d6d7b8",
+		},
+	],
+}
